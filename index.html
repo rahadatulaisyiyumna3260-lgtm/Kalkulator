@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <input type="number" id="angka1" placeholder="Angka pertama">
+    <input type="number" id="angka2" placeholder="Angka kedua">
+    <br><br>
+    <button onclick="hitungTambah()">Penjumlahan (+)</button>
+    <h3 id="hasil">Hasil: -</h3>
+    <script>
+        function hitungTambah() {
+            const a = Number(document.getElementById("angka1").value);
+            const b = Number(document.getElementById("angka2").value);
+            document.getElementById("hasil").textContent =
+                "Hasil: " + (a + b);
+        }
+    </script>
+</body>
+</html>
